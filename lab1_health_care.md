@@ -108,3 +108,7 @@ Create a flow to:
 
    ![](./images/10.png)
 
+
+### Task: Explore the Flow
+
+Explore the flow by giving different prompts and bigger calculations.
