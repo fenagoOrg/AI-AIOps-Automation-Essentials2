@@ -1,12 +1,16 @@
+# Use Case: Automated Lead Capture and Follow-up.
+This project will automate the process of collecting leads from a Google Form, storing them in a Google Sheet, and sending a welcome email via Gmail to each new lead.
+
+
 ### Step 1: 
 #### Set Up a Google Form for Lead Collection
 1. Go to Google Forms.
 2. Click Blank Form and name it "Lead Capture Form."
 3. Add the following fields:
-	Name (Short answer)
-	Email (Short answer)
-	Phone Number (Short answer)
-	Company Name (Short answer)
+- 	Name (Short answer)
+- 	Email (Short answer)
+- 	Phone Number (Short answer)
+- 	Company Name (Short answer)
 4. Click the Responses tab and link it to a Google Sheet by clicking the Google Sheets icon.
 5. Name the sheet "Lead Data" and save.
 
@@ -28,7 +32,7 @@
 5. Click OK to save.
 
 ### Step 4: 
-#### Gmail Module (Send Welcome Email)
+#### Gmail Module (Send "Reaching Out" Email)
 
 1. Click + after the Google Sheets module.
 2. Search for Gmail and select "Send an Email."
@@ -43,19 +47,30 @@
 	[Your Business Name]
 ```
 
-
 ### Step 5: 
-#### Test the Automation
+#### Add Slack Module (Notification)
+1. Click + → Search Slack → Select Send a Message.
+2. Connect your Slack workspace.
+3. Choose the channel (e.g., #leads-notification).
+Message Content
 
-1. Click Run Once in MAKE.com.
-2. Fill out the Google Form with test data.
-3. Check the Google Sheet for the new entry.
-4. Verify that the email is sent to the provided email address.
+```html
+🚀 New Lead Alert!  
+Name: {{Name}}  
+Email: {{Email}}  
+Message: {{Message}}  
+```
+4.Click OK.
+
 
 ### Step 6: 
-#### Activate the Scenario
+#### Test and Activate the Flow**
+1. Click Run Once to test with a form submission.
+2. If everything works fine, click Turn on Scheduling to automate.
+3. ✅ Final Flow Components:
 
-1. Click the Clock Icon (Scheduling) at the bottom.
-2. Toggle the scenario to ON.
-3. Set the frequency (e.g., Every 5 minutes).
-4. Click Save.
+5. Google Form (Lead collection)
+6. Google Sheets (Store data)
+7. MAKE.com - Google Sheets Trigger (Detect new leads)
+8. MAKE.com - Gmail Module (Send confirmation email)
+9. MAKE.com - Slack Module (Notify team)
