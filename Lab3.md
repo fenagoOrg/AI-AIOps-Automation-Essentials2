@@ -1,46 +1,61 @@
-## Lab: Health Care Staffing Invoice Generator
+### Step 1: 
+#### Set Up a Google Form for Lead Collection
+1. Go to Google Forms.
+2. Click Blank Form and name it "Lead Capture Form."
+3. Add the following fields:
+	Name (Short answer)
+	Email (Short answer)
+	Phone Number (Short answer)
+	Company Name (Short answer)
+4. Click the Responses tab and link it to a Google Sheet by clicking the Google Sheets icon.
+5. Name the sheet "Lead Data" and save.
 
-### **Part 1: Account Setup and Getting Started**
+### Step 2:
+#### Create a Scenario in MAKE.com
 
-### **Step 1: Access LangFlow**
-1. Open your web browser and navigate to [LangFlow](https://www.langflow.org/).
-2. Click on the **Sign Up** button in the top-right corner of the homepage.
+1. Log in to MAKE.com.
+2. Click Create a new scenario.
+3. Click the + button to add a module.
 
-# **Use Case 1: Customer Complaint Resolver**
+### Step 3: 
+#### Google Sheets Module (Trigger)
 
-### **Step 2:Create a New Langflow Project**
-1. Open Langflow and click Blank Flow to start from scratch.
-2. Name your flow: Customer Complaint Resolver.
-3. Save to store your project.(Just click Crtl + S)
+1. Search for Google Sheets and select "Watch New Rows" (Trigger).
+2. Click Add connection and authorize access to your Google Sheets.
+3. Select the spreadsheet "Lead Data" and choose the worksheet 
+(e.g., "Sheet1").
+4. Choose "Row Added" as the trigger event.
+5. Click OK to save.
 
-![](./images/1.png)
+### Step 4: 
+#### Gmail Module (Send Welcome Email)
 
-![](./images/2.png)
+1. Click + after the Google Sheets module.
+2. Search for Gmail and select "Send an Email."
+3. Click Add connection and authenticate your Gmail account.
+4. In the To field, click the variable selector and choose Email from Google Sheets.
+5. Enter a Subject: "Thank you for contacting us!"
 
-
-### **Step 3: Add an Input Node (User Complaint Submission)
-
-1. Drag and drop the Input node onto the canvas.
-2. Select Chat Input to allow users to submit their complaints.
-3. Configure Input Node:
-- Prompt: "Describe your issue in detail, including order ID (if applicable)."
-- Enable history tracking to retrieve previous complaints from a customer.
-4.Save.
-
-
-### Step 4: Add a Data Storage Node (Retrieve Past Complaints)]
-
-1. Drag and drop the Vector Store node to store and retrieve past complaint records.
-2. Choose Datastax Astra DB (or another vector database like Pinecone).
-3. Connect the Chat Input node to the Vector Store node.
-
----
+```html
+	Hi {{Name}},  
+	Thank you for reaching out! Our team will get back to you soon.  
+	Regards,  
+	[Your Business Name]
+```
 
 
+### Step 5: 
+#### Test the Automation
 
-### **Objective**:
-Create a flow to:
-- Generate invoices for clients.
-- Calculate recruiter commissions.
-- Summarize placement data.
+1. Click Run Once in MAKE.com.
+2. Fill out the Google Form with test data.
+3. Check the Google Sheet for the new entry.
+4. Verify that the email is sent to the provided email address.
 
+### Step 6: 
+#### Activate the Scenario
+
+1. Click the Clock Icon (Scheduling) at the bottom.
+2. Toggle the scenario to ON.
+3. Set the frequency (e.g., Every 5 minutes).
+4. Click Save.
