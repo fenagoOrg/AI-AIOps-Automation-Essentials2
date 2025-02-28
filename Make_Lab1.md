@@ -1,4 +1,4 @@
-# Use Case: Automated Lead Capture and Follow-up.
+# Use Case: Automated Lead Capture and Follow-up.(Make.com)
 This project will automate the process of collecting leads from a Google Form, storing them in a Google Sheet, and sending a welcome email via Gmail to each new lead.
 
 
