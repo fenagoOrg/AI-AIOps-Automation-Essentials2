@@ -97,6 +97,10 @@ The system consists of the following components:
 
 ---
 
+**Adjust the connections as per the below :**
+![](https://github.com/Neha-Chiluka/langflow-labs/blob/main/images/langflow!.png?raw=true)
+
+
 ## **Final Testing and Execution**
 1. **Upload product image** in the **Chat Input** field.
 2. **Run the workflow** and observe how the AI processes the information.
@@ -106,4 +110,3 @@ The system consists of the following components:
 
 ## **Conclusion**
 You have successfully built a **Product Quality Analysis** system using Langflow. This workflow helps automate product condition evaluation, reducing manual efforts. You can further enhance it by integrating an image-processing model for visual inspection. 🚀
-
