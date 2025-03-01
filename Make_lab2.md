@@ -1,4 +1,4 @@
-## 2. Automated Customer Inquiry Response & Follow-Up
+# 2. Automated Customer Inquiry Response & Follow-Up
 
 ### Overview
 This workflow processes customer inquiries in real time using five components:
@@ -31,6 +31,8 @@ This workflow processes customer inquiries in real time using five components:
 6. Map the incoming webhook data (e.g., **Name**, **Email**, **Inquiry**, **Urgency**) to the corresponding columns.
 7. Save the module.
 
+Note: For the connection part you might have to login into your google account.
+
 #### Step 3: Send an Auto-Response Email via Email by Make
 1. Click **+** after the Google Sheets module.
 2. Search for the **Email** module provided by Make (commonly listed as **"Send an Email"** under Email by Make).
@@ -38,6 +40,8 @@ This workflow processes customer inquiries in real time using five components:
 4. In the **To** field, map the email address from the webhook data.
 5. Set the **Subject** to "We’ve received your inquiry!".
 6. In the **Body**, enter your auto-response message. For example:
+
+Note: You will have to login into your microsoft account in order for this component to work. ( Choose Microsoft STMP option from the dropdown)
 
 ```html
 Hi {{Name}},
