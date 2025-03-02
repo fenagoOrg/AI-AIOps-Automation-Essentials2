@@ -69,8 +69,6 @@ You will now land on the next stage of the website
 - Click on the Deploy button to publish the dashboard.
 - Once deployed, share the link with users who can benefit from personal finance management.
 
-![](https://github.com/Neha-Chiluka/langflow-labs/blob/main/images/v.2.png?raw=true)
-
 ---
 
 ## **Conclusion**
