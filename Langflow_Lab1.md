@@ -1,23 +1,15 @@
-# HR Policies Q&A - Step-by-Step Guide
+# **HR Policies Q&A - Step-by-Step Guide**
 
-## Table of Contents
+## **Table of Contents**
+1. [Introduction](#introduction)
+2. [Prerequisites](#workflow-overview)
+3. [Workflow Steps](#step-by-step-implementation)
+   - [Step 1: Access Langflow Online](#step-1-add-chat-input-component)
+   - [Step 2: Add Components to Your Workflow](#step-2-configure-the-prompt-component)
+   - [Step 3:Running the Workflow](#step-3-connect-the-openai-component)
+4. [Benefits of This System](#final-testing-and-execution)
 
-**1. Introduction**
-
-**2. Prerequisites**
-
-**3. Workflow Steps**
-
-**Step 1: Access Langflow Online**
-
-**Step 2: Add Components to Your Workflow**
-
-**Step 3: Running the Workflow**
-
-**4. Benefits of This System**
-
-**5. Conclusion**
-
+---
 **Introduction**
 
 This guide will walk you through creating an HR Policies Q&A system using Langflow. This system allows users to ask questions about HR policies and receive AI-generated responses. Follow the steps below to build your own interactive HR assistant.
@@ -119,11 +111,12 @@ Question:
 
 - Run the flow and review the AI-generated response in the Chat Output field.
 
-Benefits of This System
+**Benefits of This System**
 
 ✔️ Quick access to HR policy details✔️ Reduces workload on HR teams✔️ Provides accurate and structured responses
 
-**Adjust the connections as shown in the below image.**
+Adjust the connections as shown in the below image.
 
 **Final flow:**
+
 ![](https://github.com/Neha-Chiluka/langflow-labs/blob/main/images/LANG!.png?raw=true)
