@@ -18,7 +18,7 @@ This guide will walk you through creating an HR Policies Q&A system using Langfl
 
 - Before you begin, ensure you have the following:
 
-- Access to Langflow Web Interface (No local installation required)
+- Access to Langflow Web Interface (No local installation required) : https://www.langflow.org/
 
 - OpenAI API Key (for accessing the language model)
 
